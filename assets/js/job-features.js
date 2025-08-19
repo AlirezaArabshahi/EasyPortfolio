@@ -61,6 +61,12 @@ function closeJobBanner() {
     }
 }
 
+// --- EXPOSE FUNCTIONS TO GLOBAL SCOPE ---
+window.toggleJobPopup = toggleJobPopup;
+window.closeJobPopup = closeJobPopup;
+window.closeJobBanner = closeJobBanner;
+
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new JobFeatures();

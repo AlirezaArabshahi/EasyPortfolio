@@ -3,9 +3,12 @@
   "version": "2.0.0",
   "description": "Personal website with interactive animations and clean template system",
   "main": "index.html",
+  "type": "module",
   "scripts": {
-    "build": "node src/build.js",
-    "dev": "node src/build.js && open index-generated.html"
+    "generate": "node src/build.js",
+    "dev": "npm run generate && vite",
+    "build": "npm run generate && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,8 @@
   ],
   "author": "Alireza Arabshahi",
   "license": "CC-BY-NC-4.0",
-  "homepage": "https://alirezaarabshahi.github.io"
+  "homepage": "https://alirezaarabshahi.github.io",
+  "devDependencies": {
+    "vite": "^7.1.2"
+  }
 }

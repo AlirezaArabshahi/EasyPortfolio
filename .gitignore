@@ -2,6 +2,11 @@
 VERSION_HISTORY.md
 src/
 index-generated.html
+index-top.html
+
+# Vite & Node
+node_modules/
+dist/
 
 # فایل‌های سیستم
 .DS_Store
